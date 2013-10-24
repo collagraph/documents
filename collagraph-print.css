@@ -1,0 +1,154 @@
+body {
+  font-family: "Meta OT", sans-serif;
+  font-size: 12pt;
+  line-height: 1.663; }
+
+a { text-decoration: underline; }
+
+.distinct {
+  font-size: 23.008px;
+  font-size: 1.438rem; }
+
+.discrete {
+  font-size: 15.328px;
+  font-size: 0.958rem; }
+
+.details {
+  margin-top: 34.496px;
+  margin-top: 2.156rem;
+  font-size: 17.008px;
+  font-size: 1.063rem;
+  letter-spacing: 1px; }
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500;
+}
+
+h2 {
+  padding-top: 38.256px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  margin-top: 23.008px;
+}
+
+p,
+ul,
+ol, 
+dl,
+figure, 
+table {
+  margin: 25.504px 0px 0px;
+}
+
+dt {
+	font-weight: 500;
+}
+
+table {
+	width: 100%;
+}
+
+th, td {
+	text-align: left !important;
+}
+
+h2 + *, 
+h3 + *, 
+h4 + *, 
+h5 + *, 
+h6 + * {
+	margin-top: 17.008px;
+}
+
+/* end @type */
+/* @colours -------------------------------------------------------------- */
+/* off-black text */
+
+body {
+  color: #000000;
+}
+
+a {
+  color: #3678b6; }
+  a:hover, a:focus {
+    color: #2a5e8f; }
+  a:active {
+    color: #1f4467; }
+
+
+.discrete {
+  color: #888888; }
+
+label.invalid {
+  background-color: #e78c52; }
+
+.success {
+  background-color: #9aab44; }
+
+input.invalid,
+textarea.invalid {
+  border-color: #e78c52; }
+
+@media print {
+  .read a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  .read abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+    /*
+* Don't show links for images, or javascript/internal links
+*/
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  pre,
+  figure {
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+
+  img {
+    max-width: 100% !important; }
+
+  hr {
+    page-break-before: always; }
+
+  @page {
+    margin-top: 3cm;
+    margin-right: 6cm;
+    margin-bottom: 6cm;
+    margin-left: 3cm; }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid; }
+
+  .breadcrumb,
+  .nav-link,
+  .social,
+  #emphasis-instructions,
+  .page-nav,
+  .newsletter-form,
+  .primary-nav {
+    display: none; }
+
+  .site-footer {
+    position: static;
+    bottom: 0;
+    page-break-before: always; } }
