@@ -35,9 +35,9 @@ h3 {
 
 p,
 ul,
-ol, 
+ol,
 dl,
-figure, 
+figure,
 table {
   margin: 25.504px 0px 0px;
 }
@@ -54,10 +54,10 @@ th, td {
 	text-align: left !important;
 }
 
-h2 + *, 
-h3 + *, 
-h4 + *, 
-h5 + *, 
+h2 + *,
+h3 + *,
+h4 + *,
+h5 + *,
 h6 + * {
 	margin-top: 17.008px;
 }
@@ -121,10 +121,10 @@ textarea.invalid {
     page-break-before: always; }
 
   @page {
-    margin-top: 3cm;
-    margin-right: 6cm;
-    margin-bottom: 6cm;
-    margin-left: 3cm; }
+    margin-top: 2cm;
+    margin-right: 4cm;
+    margin-bottom: 4cm;
+    margin-left: 2cm; }
 
   p,
   h2,
