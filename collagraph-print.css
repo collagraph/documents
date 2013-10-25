@@ -1,3 +1,7 @@
+* {
+  max-width: 100%;
+}
+
 body {
   font-family: "Meta OT", sans-serif;
   font-size: 12pt;
