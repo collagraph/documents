@@ -1,9 +1,19 @@
 body {
   font-family: "Meta OT", sans-serif;
   font-size: 12pt;
-  line-height: 1.663; }
+  line-height: 1.663;
+  -moz-font-feature-settings: "lnum";
+  -ms-font-feature-settings: 'lnum';
+  -webkit-font-feature-settings: 'lnum';
+  -o-font-feature-settings: 'lnum';
+  font-feature-settings: 'lnum';
+}
+
+  }
 
 a { text-decoration: underline; }
+
+
 
 .distinct {
   font-size: 23.008px;
@@ -62,6 +72,22 @@ h6 + * {
 	margin-top: 17.008px;
 }
 
+.toc a:after { 
+ content: leader(dotted) " " target-counter(attr(href, url), page);
+}
+
+h2 { 
+  bookmark-level: 1; 
+  bookmark-state: closed;
+  bookmark-label: content();
+}
+
+@page { 
+  @bottom-left { /* verso running footer */
+    content: counter(page);
+  }
+}
+
 /* end @type */
 /* @colours -------------------------------------------------------------- */
 /* off-black text */
@@ -91,7 +117,6 @@ input.invalid,
 textarea.invalid {
   border-color: #e78c52; }
 
-@media print {
   .read a[href]:after {
     content: " (" attr(href) ")"; }
 
@@ -118,6 +143,12 @@ textarea.invalid {
     max-width: 100% !important; }
 
   hr {
+  	margin: 0;
+  	height: 0;
+  	padding: 0;
+  	border: none;
+  	color: transparent;
+  	opacity: 0;
     page-break-before: always; }
 
   @page {
@@ -151,4 +182,4 @@ textarea.invalid {
   .site-footer {
     position: static;
     bottom: 0;
-    page-break-before: always; } }
+    page-break-before: always; }
