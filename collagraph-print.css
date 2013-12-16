@@ -3,11 +3,20 @@
 }
 
 body {
-  font-family: "Meta OT", sans-serif;
+  font-family: "Meta Serif OT", serif;
   font-size: 12pt;
   line-height: 1.663; }
 
 a { text-decoration: underline; }
+
+img.logo {
+  width: 25%;
+}
+
+.contact-information,
+.contents {
+  font-family: "Meta OT", sans-serif;
+}
 
 .distinct {
   font-size: 23.008px;
@@ -21,16 +30,19 @@ a { text-decoration: underline; }
   margin-top: 34.496px;
   margin-top: 2.156rem;
   font-size: 17.008px;
-  font-size: 1.063rem;
-  letter-spacing: 1px; }
+  font-size: 1.063rem; }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  font-weight: normal;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "Meta OT", sans-serif;
 	font-weight: 500;
 }
 
 h2 {
   padding-top: 38.256px;
-  letter-spacing: 1px;
 }
 
 h3 {
@@ -44,6 +56,13 @@ dl,
 figure,
 table {
   margin: 25.504px 0px 0px;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin-top: 0;
 }
 
 dt {
