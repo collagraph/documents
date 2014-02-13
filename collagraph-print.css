@@ -390,6 +390,13 @@ li p {
   margin: 0;
 }
 
+ul ul li,
+ol ul li,
+ol ol li,
+ul ol li {
+  margin-left: 17.008px;
+}
+
 @media print {
   p,
   h2,
@@ -408,7 +415,7 @@ li p {
   }
 
   .contents a[href]::after {
-    content: "... " target-counter(attr(href), page);
+    content: " ... " target-counter(attr(href), page);
   }
   .features a[href]::after {
     content: target-counter(attr(href), page);
@@ -418,6 +425,7 @@ li p {
     @bottom-right {
         font-family: "Meta OT";
         content: counter(page);
+        font-size: 10pt;
     }
   }
 }
