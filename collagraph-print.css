@@ -416,6 +416,7 @@ li p {
 
   @page {
     @bottom-right {
+        font-family: "Meta OT";
         content: counter(page);
     }
   }
