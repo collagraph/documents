@@ -406,4 +406,17 @@ li p {
   .feature-title {
     page-break-after: avoid !important;
   }
+
+  .contents a[href]::after {
+    content: "... " target-counter(attr(href), page);
+  }
+  .features a[href]::after {
+    content: target-counter(attr(href), page);
+  }
+
+  @page {
+    @bottom-right {
+        content: counter(page);
+    }
+  }
 }
