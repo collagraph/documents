@@ -1,53 +1,127 @@
+/* Meta OT, Bold */
 @font-face {
-  font-family: "Meta OT", sans-serif;
-  font-weight: normal;
-  src: url('MetaOT-Norm.otf');
+    font-family: "Meta OT";
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("MetaOT-Bold.otf")
 }
 
+/* Meta OT, Bold Italic */
 @font-face {
-  font-family: "Meta OT", sans-serif;
-  font-style: italic;
-  font-weight: normal;
-  src: url('MetaOT-NormIta.otf');
+    font-family: "Meta OT";
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("MetaOT-BoldIta.otf")
 }
 
+/* Meta OT, Book */
 @font-face {
-  font-family: "Meta OT", sans-serif;
-  font-weight: bold;
-  src: url('MetaOT-Medi.otf');
+    font-family: "Meta OT";
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("MetaOT-Book.otf")
 }
 
+/* Meta OT, Book Italic */
 @font-face {
-  font-family: "Meta OT", sans-serif;
-  font-style: italic;
-  font-weight: bold;
-  src: url('MetaOT-MediIta.otf');
+    font-family: "Meta OT";
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("MetaOT-BookIta.otf")
 }
 
+/* Meta OT, Medium */
 @font-face {
-  font-family: "Meta Serif OT", serif;
-  font-weight: normal;
-  src: url('MetaSerifOT-Book.otf');
+    font-family: "Meta OT";
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("MetaOT-Medi.otf")
 }
 
+/* Meta OT, Medium Italic */
 @font-face {
-  font-family: "Meta Serif OT", serif;
-  font-style: italic;
-  font-weight: normal;
-  src: url('MetaSerifOT-BookItalic.otf');
+    font-family: "Meta OT";
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("MetaOT-MediIta.otf")
 }
 
+/* Meta OT, Normal */
 @font-face {
-  font-family: "Meta Serif OT", serif;
-  font-weight: bold;
-  src: url('MetaSerifOT-Bold.otf');
+    font-family: "Meta OT";
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("MetaOT-Norm.otf")
 }
 
+/* Meta OT, Normal Italic */
 @font-face {
-  font-family: "Meta Serif OT", serif;
-  font-style: italic;
-  font-weight: bold;
-  src: url('MetaSerifOT-BoldItalic.otf');
+    font-family: "Meta OT";
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("MetaOT-NormIta.otf")
+}
+
+/* Meta Serif OT, Black */
+@font-face {
+    font-family: "Meta Serif OT";
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("MetaSerifOT-Black.otf")
+}
+
+/* Meta Serif OT, Black Italic */
+@font-face {
+    font-family: "Meta Serif OT";
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("MetaSerifOT-BlackItalic.otf")
+}
+
+/* Meta Serif OT, Bold */
+@font-face {
+    font-family: "Meta Serif OT";
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("MetaSerifOT-Bold.otf")
+}
+
+/* Meta Serif OT, Bold Italic */
+@font-face {
+    font-family: "Meta Serif OT";
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("MetaSerifOT-BoldItalic.otf")
+}
+
+/* Meta Serif OT, Book */
+@font-face {
+    font-family: "Meta Serif OT";
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("MetaSerifOT-Book.otf")
+}
+
+/* Meta Serif OT, Book Italic */
+@font-face {
+    font-family: "Meta Serif OT";
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("MetaSerifOT-BookItalic.otf")
 }
 
 strong {
@@ -101,7 +175,7 @@ img.logo.small {
 }
 
 h1 {
-  font-weight: normal;
+  font-weight: 400;
 }
 
 h1.small {
@@ -189,14 +263,14 @@ th, td {
 	text-align: left !important;
   padding: 10px 0;
   border-top: 1px solid #dedede;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .features .supporting {
   font-size: 8pt;
   font-family: "Meta OT", sans-serif;
   color: #888;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 colgroup.feature {
@@ -217,7 +291,7 @@ colgroup.price {
 }
 
 .features .feature-description {
-  font-weight: normal;
+  font-weight: 400;
   margin-top: 0 !important;
   -webkit-margin-before: 0;
 }
