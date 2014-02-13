@@ -1,3 +1,63 @@
+@font-face {
+  font-family: "Meta OT", sans-serif;
+  font-weight: normal;
+  src: url('MetaOT-Norm.otf');
+}
+
+@font-face {
+  font-family: "Meta OT", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  src: url('MetaOT-NormIta.otf');
+}
+
+@font-face {
+  font-family: "Meta OT", sans-serif;
+  font-weight: bold;
+  src: url('MetaOT-Medi.otf');
+}
+
+@font-face {
+  font-family: "Meta OT", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  src: url('MetaOT-MediIta.otf');
+}
+
+@font-face {
+  font-family: "Meta Serif OT", serif;
+  font-weight: normal;
+  src: url('MetaSerifOT-Book.otf');
+}
+
+@font-face {
+  font-family: "Meta Serif OT", serif;
+  font-style: italic;
+  font-weight: normal;
+  src: url('MetaSerifOT-BookItalic.otf');
+}
+
+@font-face {
+  font-family: "Meta Serif OT", serif;
+  font-weight: bold;
+  src: url('MetaSerifOT-Bold.otf');
+}
+
+@font-face {
+  font-family: "Meta Serif OT", serif;
+  font-style: italic;
+  font-weight: bold;
+  src: url('MetaSerifOT-BoldItalic.otf');
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
 * {
   max-width: 100%;
 }
@@ -50,15 +110,31 @@ h1.small {
 
 h2, h3, h4, h5, h6 {
   font-family: "Meta OT", sans-serif;
-	font-weight: 500;
+	font-weight: bold;
 }
 
 h2 {
   padding-top: 38.256px;
+  page-break-before: always;
 }
 
 h3 {
   margin-top: 23.008px;
+}
+
+h4, h5, h6 {
+  font-size: 12pt;
+  margin: 25.504px 0 0;
+}
+
+h5 {
+  text-transform: uppercase;
+  font-size: 11pt;
+}
+
+h6 {
+  text-decoration: underline;
+  font-size: 11pt;
 }
 
 p,
@@ -78,7 +154,7 @@ ol ol {
 }
 
 dt {
-	font-weight: 500;
+	font-weight: bold;
 }
 
 table {
@@ -92,14 +168,14 @@ thead th {
 
 th, td {
 	text-align: left !important;
-  padding: 1rem 0;
+  padding: 10px 0;
   border-top: 1px solid #dedede;
   font-weight: normal;
 }
 
 .features .supporting {
   font-size: 8pt;
-  font-family: "Meta OT";
+  font-family: "Meta OT", sans-serif;
   color: #888;
   font-weight: normal;
 }
@@ -110,6 +186,10 @@ colgroup.feature {
 
 colgroup.price {
   width: 15%;
+}
+
+.features {
+  font-size: 11pt;
 }
 
 .features .feature-title {
@@ -125,6 +205,10 @@ colgroup.price {
 
 .features .feature-included {
   text-align: center !important;
+}
+
+.features tr {
+  padding: 10px 0;
 }
 
 h2 + *,
@@ -181,18 +265,18 @@ hr {
 }
 
 @page {
-  margin-top: 6cm;
-  margin-right: 4cm;
-  margin-bottom: 8cm;
-  margin-left: 4cm;
+  margin-top: 2.618cm;
+  margin-right: 2.618cm;
+  margin-bottom: 4.236cm;
+  margin-left: 2.618;
 }
 
 
-@page {
-  @bottom-left {
+/*@page {
+  @bottom-right {
     content: counter(page);
-    }
   }
+}*/
 
 p,
 h2,
@@ -206,5 +290,27 @@ h3,
 h4,
 h5,
 h6 {
-  page-break-after: avoid;
+  page-break-after: avoid !important;
+}
+
+li p {
+  margin: 0;
+}
+
+@media print {
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .feature-title {
+    page-break-after: avoid !important;
+  }
 }
