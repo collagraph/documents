@@ -74,7 +74,26 @@ ol ol {
 }
 
 dt {
-	font-weight: 500;
+	font-weight: bold;
+}
+
+dl:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+dt {
+    width: 10em;
+    float: left;
+    clear: left;
+    margin-top: .25em;
+}
+
+dd {
+    float: left;
+    clear: right;
+    margin-top: .25em;
 }
 
 table {
