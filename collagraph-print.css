@@ -261,7 +261,7 @@ thead th {
 
 th, td {
 	text-align: left !important;
-  padding: 10px 0;
+  padding: 10.512px 0;
   border-top: 1px solid #dedede;
   font-weight: 400;
 }
@@ -301,7 +301,7 @@ colgroup.price {
 }
 
 .features tr {
-  padding: 10px 0;
+  padding: 10.512px 0;
 }
 
 h2 + *,
@@ -394,7 +394,7 @@ ul ul li,
 ol ul li,
 ol ol li,
 ul ol li {
-  margin-left: 17.008px;
+  margin-left: 10.512px;
 }
 
 @media print {
