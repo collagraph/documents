@@ -133,6 +133,7 @@ body {
   -webkit-font-feature-settings: 'lnum';
   -o-font-feature-settings: 'lnum';
   font-feature-settings: 'lnum';
+  font-variant: prince-opentype(ccmp);
 }
 
 strong {
