@@ -1,127 +1,12 @@
-/* Meta OT, Bold */
-@font-face {
-    font-family: "Meta OT";
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    src: url("MetaOT-Medi.otf")
-}
-
-/* Meta OT, Bold Italic */
-@font-face {
-    font-family: "Meta OT";
-    font-weight: bold;
-    font-style: italic;
-    font-stretch: normal;
-    src: url("MetaOT-MediIta.otf")
-}
-
-/* Meta OT, Book */
-@font-face {
-    font-family: "Meta OT";
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    src: url("MetaOT-Book.otf")
-}
-
-/* Meta OT, Book Italic */
-@font-face {
-    font-family: "Meta OT";
-    font-weight: 400;
-    font-style: italic;
-    font-stretch: normal;
-    src: url("MetaOT-BookIta.otf")
-}
-
-/* Meta OT, Medium */
-@font-face {
-    font-family: "Meta OT";
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    src: url("MetaOT-Medi.otf")
-}
-
-/* Meta OT, Medium Italic */
-@font-face {
-    font-family: "Meta OT";
-    font-weight: 500;
-    font-style: italic;
-    font-stretch: normal;
-    src: url("MetaOT-MediIta.otf")
-}
-
-/* Meta OT, Normal */
-@font-face {
-    font-family: "Meta OT";
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    src: url("MetaOT-Norm.otf")
-}
-
-/* Meta OT, Normal Italic */
-@font-face {
-    font-family: "Meta OT";
-    font-weight: 400;
-    font-style: italic;
-    font-stretch: normal;
-    src: url("MetaOT-NormIta.otf")
-}
-
-/* Meta Serif OT, Black */
-@font-face {
-    font-family: "Meta Serif OT";
-    font-weight: 900;
-    font-style: normal;
-    font-stretch: normal;
-    src: url("MetaSerifOT-Black.otf")
-}
-
-/* Meta Serif OT, Black Italic */
-@font-face {
-    font-family: "Meta Serif OT";
-    font-weight: 900;
-    font-style: italic;
-    font-stretch: normal;
-    src: url("MetaSerifOT-BlackItalic.otf")
-}
-
-/* Meta Serif OT, Bold */
-@font-face {
-    font-family: "Meta Serif OT";
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    src: url("MetaSerifOT-Bold.otf")
-}
-
-/* Meta Serif OT, Bold Italic */
-@font-face {
-    font-family: "Meta Serif OT";
-    font-weight: bold;
-    font-style: italic;
-    font-stretch: normal;
-    src: url("MetaSerifOT-BoldItalic.otf")
-}
-
-/* Meta Serif OT, Book */
-@font-face {
-    font-family: "Meta Serif OT";
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    src: url("MetaSerifOT-Book.otf")
-}
-
-/* Meta Serif OT, Book Italic */
-@font-face {
-    font-family: "Meta Serif OT";
-    font-weight: 400;
-    font-style: italic;
-    font-stretch: normal;
-    src: url("MetaSerifOT-BookItalic.otf")
+body {
+  font-family: "Meta Serif OT", serif;
+  font-size: 12pt;
+  line-height: 1.663;
+  -moz-font-feature-settings: "lnum";
+  -ms-font-feature-settings: 'lnum';
+  -webkit-font-feature-settings: 'lnum';
+  -o-font-feature-settings: 'lnum';
+  font-feature-settings: 'lnum';
 }
 
 strong {
@@ -136,16 +21,6 @@ em {
   max-width: 100%;
 }
 
-body {
-  font-family: "Meta Serif OT", serif;
-  font-size: 12pt;
-  line-height: 1.663;
-  -moz-font-feature-settings: "lnum";
-  -ms-font-feature-settings: 'lnum';
-  -webkit-font-feature-settings: 'lnum';
-  -o-font-feature-settings: 'lnum';
-  font-feature-settings: 'lnum';
-}
 
 a {
   text-decoration: underline;
@@ -187,8 +62,11 @@ h2, h3, h4, h5, h6 {
 	font-weight: bold;
 }
 
+h1, h2 {
+  margin-top: 38.256px;
+}
+
 h2 {
-  padding-top: 38.256px;
   page-break-before: always;
 }
 
@@ -218,6 +96,12 @@ dl,
 figure,
 table {
   margin: 25.504px 0px 0px;
+}
+
+blockquote {
+  color: #666;
+  font-family: "Meta OT", sans-serif;
+  font-style: italic;
 }
 
 ul ul,
@@ -360,22 +244,19 @@ hr {
 @page {
   margin-top: 2.618cm;
   margin-right: 2.618cm;
-  margin-bottom: 4.236cm;
-  margin-left: 2.618;
+  margin-bottom: 2.618cm;
+  margin-left: 2.618cm;
 }
 
-
-/*@page {
-  @bottom-right {
-    content: counter(page);
-  }
-}*/
-
-p,
 h2,
 h3 {
   orphans: 3;
   widows: 3;
+}
+
+p {
+  orphans: 2;
+  widows: 2;
 }
 
 h2,
